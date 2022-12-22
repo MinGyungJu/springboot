@@ -19,14 +19,12 @@ public class ABasicApplication {
 	public String hello() {
 		return "안녕 부트";
 	}
-	
 	@GetMapping("/hello2")
 	public BoardVO hello2() {
-		BoardVO vo = new BoardVO();
+		BoardVO vo =  new BoardVO();
 		vo.setSeq(1);
 		vo.setTitle("테스트");
 		vo.setWriter("홍길동");
 		return vo;
 	}
-
 }
